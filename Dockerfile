@@ -1,4 +1,4 @@
-FROM python:alpine3.8
+FROM python:3.8-slim-buster
 COPY . /app
 WORKDIR /app
 RUN python --version  >"log.txt"
