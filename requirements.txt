@@ -1,2 +1,2 @@
 flask
-hdbcli
+hdbcli==2.3.119
