@@ -1,5 +1,5 @@
 from flask import Flask
-import hdbcli
+from hdbcli import dbapi
 import pandas as pd
 app = Flask(__name__)
 @app.route("/")
@@ -23,7 +23,7 @@ def databasehana():
 
 def hello():
     obj = databasehana()
-    return obj
+    return "%s" % (obj)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int("5000"), debug=True)
