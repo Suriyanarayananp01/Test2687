@@ -3,4 +3,5 @@ hdbcli
 requests
 pandas
 simplejson
+json
 
